@@ -1,0 +1,40 @@
+// Headers: HTTP
+
+azure-asyncnotification: Enabled
+azure-asyncoperation: https://management.azure.com/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/providers/Microsoft.Network/locations/westeurope/operations/c599a1a6-5480-41a4-9b49-7ea289661ec6?api-version=2022-05-01
+cache-control: no-cache
+content-length: 655
+content-type: application/json; charset=utf-8
+date: Wed, 16 Nov 2022 11:08:02 GMT
+expires: -1
+pragma: no-cache
+retry-after: 1
+server: Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-ms-arm-service-request-id: ce751e74-6072-4b06-8711-06bb44cc5be1
+x-ms-correlation-request-id: c92dbe3c-33f5-48a9-9c3a-be7fefd10b31
+x-ms-ratelimit-remaining-subscription-writes: 1198
+x-ms-request-id: c599a1a6-5480-41a4-9b49-7ea289661ec6
+x-ms-routing-request-id: NORTHEUROPE:20221116T110802Z:c92dbe3c-33f5-48a9-9c3a-be7fefd10b31
+
+// Body: JSON
+
+{
+  "name": "20.224.181.118",
+  "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/ksc-cloud-computing_group/providers/Microsoft.Network/publicIPAddresses/20.224.181.118",
+  "etag": "W/\"5647f99f-4c9b-476c-bfc0-6d6de8a62dfa\"",
+  "location": "westeurope",
+  "properties": {
+    "provisioningState": "Updating",
+    "resourceGuid": "47f71dff-e9be-4c2e-b1c2-0694bb5c6181",
+    "publicIPAddressVersion": "IPv4",
+    "publicIPAllocationMethod": "Static",
+    "idleTimeoutInMinutes": 10,
+    "ipTags": []
+  },
+  "type": "Microsoft.Network/publicIPAddresses",
+  "sku": {
+    "name": "Basic",
+    "tier": "Regional"
+  }
+}

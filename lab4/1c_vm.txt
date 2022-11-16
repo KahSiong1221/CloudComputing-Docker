@@ -1,0 +1,125 @@
+// Headers: HTTP
+
+azure-asyncnotification: Enabled
+azure-asyncoperation: https://management.azure.com/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/providers/Microsoft.Compute/locations/westeurope/operations/aef7f622-e4ec-42f0-87f7-335b24c186cf?p=1f4493d1-26c7-4157-a8fa-227202b3f1d3&api-version=2022-08-01
+cache-control: no-cache
+content-type: application/json; charset=utf-8
+date: Wed, 16 Nov 2022 11:40:04 GMT
+expires: -1
+pragma: no-cache
+server: Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-ms-correlation-request-id: c76e218c-1321-431b-87d0-459bcf36104f
+x-ms-ratelimit-remaining-resource: Microsoft.Compute/PutVM3Min;237,Microsoft.Compute/PutVM30Min;1197
+x-ms-ratelimit-remaining-subscription-writes: 1194
+x-ms-request-id: aef7f622-e4ec-42f0-87f7-335b24c186cf
+x-ms-routing-request-id: NORTHEUROPE:20221116T114004Z:c76e218c-1321-431b-87d0-459bcf36104f
+
+// Body: JSON
+
+{
+  "name": "ksc-cloud-computing",
+  "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/ksc-cloud-computing_group/providers/Microsoft.Compute/virtualMachines/ksc-cloud-computing",
+  "type": "Microsoft.Compute/virtualMachines",
+  "location": "westeurope",
+  "properties": {
+    "vmId": "bd23b463-5536-4fe4-8ec8-9d12b8929c95",
+    "hardwareProfile": {
+      "vmSize": "Standard_D2s_v3"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "canonical",
+        "offer": "0001-com-ubuntu-server-focal",
+        "sku": "20_04-lts-gen2",
+        "version": "latest",
+        "exactVersion": "20.04.202209200"
+      },
+      "osDisk": {
+        "osType": "Linux",
+        "name": "ksc-cloud-computing_OsDisk_1_d5adb7468a6f4191bd896c516c270e01",
+        "createOption": "FromImage",
+        "caching": "ReadWrite",
+        "managedDisk": {
+          "storageAccountType": "Premium_LRS",
+          "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/KSC-CLOUD-COMPUTING_GROUP/providers/Microsoft.Compute/disks/ksc-cloud-computing_OsDisk_1_d5adb7468a6f4191bd896c516c270e01"
+        },
+        "deleteOption": "Delete",
+        "diskSizeGB": 30
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "ksc-cloud-computing",
+      "adminUsername": "ksc",
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": true,
+        "ssh": {
+          "publicKeys": [
+            {
+              "path": "/home/ksc/.ssh/authorized_keys",
+              "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDbLrw1YveDDiHeY6qBlgSvzF73Tr9Eya79qcEUp+FYJKWTLwAX+8TUjC7ApJ9o8radwwzaE8l51SFCuDXKB7SQHS0LcpnSpouPSHLhzRwoOX4F5YALBIkxvxjQxEOy4YljO5mUDNFAHHQjaKgHocqsxVYlvvx0Mrt03OJJhIOAnN5BHpahloPq7wDrbX+J/W3Ve5/eqSkJoFZslol5kv83SgZXcpXlKOi61YsCyhLSjXMIX2fxx4YEuJTCk2FMJ4BXPs5sydX7D3yjqvrC2wEObYD4w/puP7JYZzcG9Go0UGIvR+alHxfN+ubE4RDNfbUi18eeyl6/Bhi7WcImR3C+ZvRENSJWmenM9Yg31igVyteixv/1Rq1CKb0cy9W3VzCnJfJ/Euj1HoEAGATDf++Uy33MOr56cNqcKMp03j0ka7oBlCNSpQlBLByRfOIeT08ZBw5XVrFy3Hjf23kOk2UWesM5PX7tb36UDRT9m5eG900ks8Y4Pqk1Dno9b1apc/c= ksc@KahSiong-MacBook-Pro.local"
+            }
+          ]
+        },
+        "provisionVMAgent": true,
+        "patchSettings": {
+          "patchMode": "ImageDefault",
+          "assessmentMode": "ImageDefault"
+        },
+        "enableVMAgentPlatformUpdates": false
+      },
+      "secrets": [],
+      "allowExtensionOperations": true,
+      "requireGuestProvisionSignal": true
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/ksc-cloud-computing_group/providers/Microsoft.Network/networkInterfaces/ksc-cloud-computi706_z1",
+          "properties": {
+            "primary": true,
+            "deleteOption": "Detach"
+          }
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true
+      }
+    },
+    "provisioningState": "Updating",
+    "timeCreated": "2022-09-28T11:45:18.8338916+00:00"
+  },
+  "resources": [
+    {
+      "name": "AzureNetworkWatcherExtension",
+      "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/ksc-cloud-computing_group/providers/Microsoft.Compute/virtualMachines/ksc-cloud-computing/extensions/AzureNetworkWatcherExtension",
+      "type": "Microsoft.Compute/virtualMachines/extensions",
+      "location": "westeurope",
+      "properties": {
+        "autoUpgradeMinorVersion": true,
+        "provisioningState": "Succeeded",
+        "publisher": "Microsoft.Azure.NetworkWatcher",
+        "type": "NetworkWatcherAgentLinux",
+        "typeHandlerVersion": "1.4",
+        "settings": {}
+      }
+    },
+    {
+      "name": "enablevmaccess",
+      "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/ksc-cloud-computing_group/providers/Microsoft.Compute/virtualMachines/ksc-cloud-computing/extensions/enablevmaccess",
+      "type": "Microsoft.Compute/virtualMachines/extensions",
+      "location": "westeurope",
+      "properties": {
+        "autoUpgradeMinorVersion": true,
+        "provisioningState": "Succeeded",
+        "publisher": "Microsoft.OSTCExtensions",
+        "type": "VMAccessForLinux",
+        "typeHandlerVersion": "1.4",
+        "settings": {}
+      }
+    }
+  ]
+}

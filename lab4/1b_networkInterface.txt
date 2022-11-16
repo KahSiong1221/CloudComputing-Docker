@@ -1,0 +1,72 @@
+// Headers: HTTP
+
+azure-asyncnotification: Enabled
+azure-asyncoperation: https://management.azure.com/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/providers/Microsoft.Network/locations/westeurope/operations/dc7d9382-35a0-436c-a11a-010e4f34dc72?api-version=2022-05-01
+cache-control: no-cache
+content-length: 2356
+content-type: application/json; charset=utf-8
+date: Wed, 16 Nov 2022 11:16:22 GMT
+expires: -1
+pragma: no-cache
+retry-after: 4
+server: Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-ms-arm-service-request-id: 444a43dc-9ccd-45c4-9a80-398ae4487cc7
+x-ms-correlation-request-id: 0d2a0959-0e76-4a26-93e5-658724959525
+x-ms-ratelimit-remaining-subscription-writes: 1199
+x-ms-request-id: dc7d9382-35a0-436c-a11a-010e4f34dc72
+x-ms-routing-request-id: NORTHEUROPE:20221116T111622Z:0d2a0959-0e76-4a26-93e5-658724959525
+
+// Body: JSON
+
+{
+  "name": "ksc-cloud-computi706_z1",
+  "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/ksc-cloud-computing_group/providers/Microsoft.Network/networkInterfaces/ksc-cloud-computi706_z1",
+  "etag": "W/\"562664d5-a994-4b67-b5cf-e33f3c41c1ae\"",
+  "properties": {
+    "provisioningState": "Updating",
+    "resourceGuid": "9d4e5028-e577-4c78-a244-a273f630660d",
+    "ipConfigurations": [
+      {
+        "name": "ipconfig1",
+        "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/ksc-cloud-computing_group/providers/Microsoft.Network/networkInterfaces/ksc-cloud-computi706_z1/ipConfigurations/ipconfig1",
+        "etag": "W/\"562664d5-a994-4b67-b5cf-e33f3c41c1ae\"",
+        "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+        "properties": {
+          "provisioningState": "Updating",
+          "privateIPAddress": "10.0.0.4",
+          "privateIPAllocationMethod": "Dynamic",
+          "publicIPAddress": {
+            "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/ksc-cloud-computing_group/providers/Microsoft.Network/publicIPAddresses/ksc-cloud-computing-ip"
+          },
+          "subnet": {
+            "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/ksc-cloud-computing_group/providers/Microsoft.Network/virtualNetworks/ksc-cloud-computing_group-vnet/subnets/default"
+          },
+          "primary": true,
+          "privateIPAddressVersion": "IPv4"
+        }
+      }
+    ],
+    "dnsSettings": {
+      "dnsServers": [],
+      "appliedDnsServers": [],
+      "internalDomainNameSuffix": "vjokz5lpxliuhcpvqsbyct1ofb.ax.internal.cloudapp.net"
+    },
+    "macAddress": "60-45-BD-8D-16-02",
+    "enableAcceleratedNetworking": false,
+    "vnetEncryptionSupported": false,
+    "enableIPForwarding": false,
+    "disableTcpStateTracking": false,
+    "primary": true,
+    "virtualMachine": {
+      "id": "/subscriptions/1074934b-4225-4408-b3d7-1a3ab9985942/resourceGroups/ksc-cloud-computing_group/providers/Microsoft.Compute/virtualMachines/ksc-cloud-computing"
+    },
+    "hostedWorkloads": [],
+    "tapConfigurations": [],
+    "nicType": "Standard",
+    "allowPort25Out": false
+  },
+  "type": "Microsoft.Network/networkInterfaces",
+  "location": "westeurope",
+  "kind": "Regular"
+}
